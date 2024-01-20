@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Git Fetcher: Fetch and display your repository</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contro">
+            <div class="titleop1">Git Fetcher</div>
+
+            <div class="form-group">
+                <label class="form-user" for="username">Enter GitHub Username:</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+            </div>
+
+            <button class="btn-primary" onclick="fetchRepositories()">Fetch Repositories</button>
+        </div>
+
+        <div class="loderp">
+
+            <div id="loader" class="text-center">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="repositories" class="mt-4"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
